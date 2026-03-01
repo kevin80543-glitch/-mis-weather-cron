@@ -1,0 +1,2 @@
+2026-01-23 23:15:39,906 - INFO - SUCCESS: Saved record {'timestamp': '2026-01-23T15:15', 'temperature_c': 15.1, 'windspeed_kmh': 9.3, 'winddirection_deg': 62, 'is_day': 0, 'created_at': '2026-01-23T15:15:39.906765'}
+2026-01-24 00:00:06,413 - INFO - SUCCESS: Saved record {'timestamp': '2026-01-23T16:00', 'temperature_c': 15.3, 'windspeed_kmh': 6.0, 'winddirection_deg': 57, 'is_day': 0, 'created_at': '2026-01-23T16:00:06.413334'}

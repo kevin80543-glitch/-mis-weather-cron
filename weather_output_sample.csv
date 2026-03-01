@@ -1,0 +1,2 @@
+timestamp,temperature_c,windspeed_kmh,winddirection_deg,is_day,created_at
+2026-01-16T02:45,19.1,5.5,11,1,2026-01-16T02:45:59.164352
