@@ -37,3 +37,7 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 python test_weather_api.py
+
+Real output files are generated locally and are not included in this repository.
+
+Sample files are provided under output_sample/ for demonstration.
