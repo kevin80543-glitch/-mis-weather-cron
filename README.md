@@ -1,45 +1,37 @@
-# Linux Cron Weather Integration Project
+# Linux Cron Weather Integration Project（MIS 系統自動化示範）
 
 ## 專案簡介
-此專案示範在 WSL Ubuntu 環境中，
-使用 Python 建立自動化排程系統，
-定期呼叫公開天氣 API，並將資料清洗後輸出為 CSV，
-同時保留執行 log 以利後續維運與除錯。
+此專案示範在 WSL Linux 環境中，
+使用 Python 定期呼叫公開天氣 API，
+並透過 cron 建立自動化排程，
+將資料清洗後輸出為 CSV，並保留執行 log。
+本專案由個人獨立完成，涵蓋環境建置、排程設計、錯誤處理與成果文件化。
 
-本專案著重於系統整合、自動化流程與可維運性，
-適合作為 MIS / IT / 系統管理相關職缺的實務展示。
+## 專案說明
+此專案模擬 MIS 在企業中常見的情境：
+- 定期（cron）自動執行系統任務
+- 串接外部 API（天氣服務）
+- 將結果輸出為 CSV 供其他系統或人員使用
+- 同時保留 log 供錯誤排查與追蹤
 
----
+目的在於展示「系統排程 + Python 自動化 + Linux 操作」能力。
 
 ## 系統架構
-Open-Meteo API  
-→ Python Script  
-→ CSV Output  
-→ cron Scheduler  
-→ log file  
-
----
+cron Scheduler
+→ Shell Script
+→ Python Script
+→ Open-Meteo API
+→ CSV Output
+→ log file
 
 ## 使用技術
 - WSL Ubuntu
-- Python（venv）
-- Linux cron
+- Python (venv)
+- cron
 - REST API
 - logging
-- Shell Script
 
----
-
-## 專案結構說明
-- `test_weather_api.py`：天氣 API 呼叫與資料處理主程式  
-- `run_weather.sh`：提供 cron 使用的啟動腳本  
-- `weather_output_sample.csv`：CSV 範例輸出  
-- `weather.log.example`：log 格式範例  
-
----
-
-## 安裝與執行方式
-
+## 執行方式
 ```bash
 python3 -m venv venv
 source venv/bin/activate
